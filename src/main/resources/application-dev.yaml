@@ -1,0 +1,10 @@
+postgres:
+  url: "jdbc:postgresql://localhost:5432/transactions"
+  username: "root"
+  password: "root"
+
+rabbitmq:
+  host: "localhost"
+  port: "5672"
+  username: "transactions"
+  password: "123456"

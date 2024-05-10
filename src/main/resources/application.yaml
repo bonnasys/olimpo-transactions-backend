@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: olimpo-transactions-backend
+  datasource:
+    url: ${postgres.url}
+    username: ${postgres.username}
+    password: ${postgres.password}
+  liquibase:
+    change-log: liquibase/master.yaml
+  rabbitmq:
+    host: ${rabbitmq.host}
+    port: ${rabbitmq.port}
+    username: ${rabbitmq.username}
+    password: ${rabbitmq.password}
+  profiles:
+    active: dev
+
+springdoc:
+  swagger-ui:
+    path: /swagger
